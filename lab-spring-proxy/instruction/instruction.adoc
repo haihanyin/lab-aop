@@ -1,0 +1,17 @@
+== Excersise 1
+. Set a break point as the following picture shows
++
+image::aspect_with_breakpoint.PNG[]
+
+. Run `ScannerAuthenticationServiceTest`
+. Inspect the debug view when execution is suspended
+
+== Excersise 2
+. Remove interface inheritance in `ScannerAuthenticationService`
+. Change the private field type from `AuthenticationService` to  `ScannerAuthenticationService` in `ScannerAuthenticationServiceTest`
+. Set a break point as the following picture shows
++
+image::aspect_with_breakpoint.PNG[]
+
+. Run `ScannerAuthenticationServiceTest`
+. Inspect the debug view when execution is suspended

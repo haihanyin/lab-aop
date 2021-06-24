@@ -1,0 +1,9 @@
+build `try-agent-javassist-1.0-SNAPSHOT-jar-with-dependencies.jar` from another project
+
+run AgentDemo without adding agent
+
+open intellij run configuration, add `VM options`
+
+add `-javaagent:C:\Users\haiha\Workspace\other\summaries\topics\java\agent\demo\try-agent-javassist\target\try-agent-javassist-1.0-SNAPSHOT-jar-with-dependencies.jar`
+
+run program again

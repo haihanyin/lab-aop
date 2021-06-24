@@ -1,0 +1,26 @@
+== How to open bytecode
+Suppose you wanto open bytecode of `Team.class`
+
+=== In Intellij
+. Select `Team.class`
+. Select menu `View`
+. Select menu `Show Bytecode`
+
+=== In console
+. navigate to the folder where Team.class is located
+. run `javap -v -p Team.class`
+
+== Exercise 1
+. Run `mvn clean compile`
+. Open bytecode of `Team.class` in the target folder
+. Change configuration in `pom.xml`
++
+----
+<enableLazyInitialization>true</enableLazyInitialization>
+----
+. Go through steps 1-2 again, compare the bytecode changes
+
+== Exercise 2
+. Open bytecode of `Person.class` in the target folder
+. Run `mvn jacoco:instrument`
+. Check the bytecode changes in `Person.class`

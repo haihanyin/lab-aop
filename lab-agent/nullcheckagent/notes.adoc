@@ -1,0 +1,5 @@
+run `mvn clean package`
+
+`try-agent-javassist-1.0-SNAPSHOT-jar-with-dependencies.jar` will be used as agent
+
+https://stackoverflow.com/questions/9167436/dynamic-java-bytecode-manipulation-framework-comparison
