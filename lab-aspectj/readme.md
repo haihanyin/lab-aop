@@ -1,0 +1,5 @@
+- `mvn clean compile`
+- run `Main` from IDE, console prints nothing because javac is used by maven
+- set ajc as the compiler in IDE, as the picture shows
+- clean Build -> Rebuild project
+- run `Main` again, consoles prints some texts, because ajc is used by IDE
