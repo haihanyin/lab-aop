@@ -1,0 +1,8 @@
+<aspectj>
+    <aspects>
+        <aspect name="p.hh.topics.tryaspectjload.LoggingAspect"/>
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="p.hh.topics.tryaspectjload.*"/>
+        </weaver>
+    </aspects>
+</aspectj>
