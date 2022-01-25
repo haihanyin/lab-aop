@@ -8,17 +8,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ScannerAuthenticationServiceTest {
 
     @Autowired
-    private AuthenticationService scannerAuthenticationService;
+    private AuthenticationService authenticationService;
 
     @Test
     public void test() {
-        if (scannerAuthenticationService.getClass() == ScannerAuthenticationService.class) {
+        if (authenticationService.getClass() == ScannerAuthenticationService.class) {
             System.out.println("classes are equal");
         }
-        if (scannerAuthenticationService instanceof ScannerAuthenticationService) {
+        if (authenticationService instanceof ScannerAuthenticationService) {
             System.out.println("is instance of");
         }
-        scannerAuthenticationService.auth();
-        System.out.println(scannerAuthenticationService.getClass());
+        authenticationService.auth();
+        System.out.println(authenticationService.getClass());
     }
 }

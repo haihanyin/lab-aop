@@ -29,6 +29,7 @@ public class GetEntityInterceptor implements MethodInterceptor {
         if ("getForEntity".equals(method.getName())) {
             if (eventCountCircuitBreaker.checkState()) {
                 try {
+                    // original execution
                     return methodProxy.invoke(restTemplate, objects);
                 } catch (Throwable throwable) {
                     System.out.println("eventCountCircuitBreaker.incrementAndCheckState");
@@ -36,6 +37,7 @@ public class GetEntityInterceptor implements MethodInterceptor {
                     throw throwable;
                 }
             } else {
+                // directly throw exception
                 throw new ResourceAccessException("Throw error directly from proxy because the remote service is busy.");
             }
         } else {

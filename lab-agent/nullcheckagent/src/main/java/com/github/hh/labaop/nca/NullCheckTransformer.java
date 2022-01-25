@@ -13,7 +13,7 @@ public class NullCheckTransformer implements ClassFileTransformer {
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined,
                             ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
         final String replacedClassName = className.replace('/', '.');
-        if (replacedClassName.startsWith("com.github.hh.labaop")) {
+        if (replacedClassName.startsWith("p.hh.topics.tryagent")) {
             ClassPool pool = new ClassPool();
             LoaderClassPath loaderClassPath = new LoaderClassPath(loader);
             pool.insertClassPath(loaderClassPath);

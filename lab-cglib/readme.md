@@ -1,3 +1,6 @@
+Circuit breaker
+https://martinfowler.com/bliki/CircuitBreaker.html
+
 TryCglibApplicationTest
 
 in testPlainRestTemplate
